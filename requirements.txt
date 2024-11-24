@@ -3,4 +3,4 @@ openai
 streamlit
 pyyaml
 bcrypt
-streamlit-authenticator
+streamlit-authenticator=0.3.2
