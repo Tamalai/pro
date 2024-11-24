@@ -291,7 +291,7 @@ else:
             full_response = ""
             try:
                 for response in client.chat.completions.create(
-                    model="gpt-4",
+                    model="gpt-4o",
                     messages=[{"role": "system", "content": full_input}, {"role": "user", "content": user_input}],
                     max_tokens=3000,
                     temperature=0.9,
