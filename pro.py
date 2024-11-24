@@ -10,11 +10,11 @@ import datetime
 
 # קבלת הנתיב לתיקייה שבה נמצא הקובץ הנוכחי
 script_dir = os.path.dirname(os.path.abspath(__file__))
-st.write(f"Script directory: {script_dir}")  # הדפסה למעקב
+st.write(f"Script directory: {script_dir}") 
 
 # בניית נתיב יחסי לקובץ YAML
 config_path = os.path.join(script_dir, "doc", "credentialss.yaml")
-st.write(f"Config path: {config_path}")  # הדפסה למעקב
+
 
 # טעינת ההגדרות מקובץ YAML
 if not os.path.exists(config_path):
@@ -72,7 +72,7 @@ else:
 
     # בניית נתיב יחסי לקובץ stop words
     stop_words_path = os.path.join(script_dir, "doc", "heb_stopwords.txt")
-    st.write(f"Stop words path: {stop_words_path}")  # הדפסה למעקב
+   
     stop_words = load_stop_words(stop_words_path)
 
     def load_data():
@@ -181,7 +181,7 @@ else:
 
     if authentication_status:
         user_full_name = config['credentialss']['usernames'].get(username, {}).get('name', 'Unknown User')
-        st.write(f"Authenticated user's full name: {user_full_name}")  # הדפסה למעקב
+        
 
         def load_custom_css():
             custom_css = """
@@ -261,8 +261,7 @@ else:
         # בניית נתיבים יחסיים לקבצי התמונות
         logo_path = os.path.join(script_dir, "images", "logo.png")
         tamal_path = os.path.join(script_dir, "images", "tamal.png")
-        st.write(f"Logo path: {logo_path}")  # הדפסה למעקב
-        st.write(f"Tamal path: {tamal_path}")  # הדפסה למעקב
+        
 
         # החל סגנונות מותאמים ותמונות
         set_images_and_background(logo_path, tamal_path)
