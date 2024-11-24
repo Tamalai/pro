@@ -10,7 +10,7 @@ import datetime
 
 # קבלת הנתיב לתיקייה שבה נמצא הקובץ הנוכחי
 script_dir = os.path.dirname(os.path.abspath(__file__))
-st.write(f"Script directory: {script_dir}") 
+
 
 # בניית נתיב יחסי לקובץ YAML
 config_path = os.path.join(script_dir, "doc", "credentialss.yaml")
